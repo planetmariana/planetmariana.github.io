@@ -332,6 +332,9 @@ input, select, textarea {
 			width: 30%;
        		box-sizing: border-box;
         	margin: 1.67%;
+			display: flex;
+       		flex-direction: column;
+        	align-items: center;
 		}
 
 		.row > .off-4 {
@@ -2011,8 +2014,15 @@ input, select, textarea {
 		}
 
 			.item header h3 {
-				font-size: 1em;
+				font-size: 1.5em;
+				margin-bottom: 10px;
 			}
+
+			.item header p {
+				font-size: 1.2em;
+			}
+
+
 
 /* Icons */
 
@@ -2351,7 +2361,8 @@ input, select, textarea {
 		/* Item */
 
 			.item {
-				margin-bottom: 20px;
+				width: 100%;
+        		text-align: center;
 			}
 
 		/* Header */
