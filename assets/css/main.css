@@ -329,9 +329,9 @@ input, select, textarea {
 		}
 
 		.row > .col-4 {
-			width: 30%;
+			width: 32%;
        		box-sizing: border-box;
-        	margin: 1.67%;
+        	margin: 1.2%;
 			display: flex;
        		flex-direction: column;
         	align-items: center;
