@@ -4,12 +4,20 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
 		<title>PlanetMariana</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="alternate" hreflang="en" href="https://planetmariana.github.io/" />
+		<link rel="alternate" hreflang="es" href="https://planetmariana.github.io/es.html" />
+		<link rel="alternate" hreflang="x-default" href="https://planetmariana.github.io/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Mariana Carolina Sastre, PhD student at the Kapteyn Astronomical Institute, working on magma ocean exoplanets." />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload landing">
@@ -17,42 +25,46 @@
 
 			<!-- Header -->
 				<header id="header">
-					<!-- <h1 id="logo"><a href="index.html">Credit Image: Andy Shepard</a></h1> -->
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html" style="font-weight: bold;">Home</a></li>
-							<li><a href="research.html" style="font-weight: bold;">Research</a></li>
-							<li><a href="https://www.astroreca.org/en" style="font-weight: bold;">Outreach</a></li>
-							<li><a href="#about-me" style="font-weight: bold;" >About me</span></a></li>
-							<li><a href="mailto:m.c.villamil.sastre@rug.nl" class="button primary" style="font-weight: bold;">Contact</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#project" class="scrolly">Research</a></li>
+							<li><a href="https://www.astroreca.org/en" target="_blank" rel="noopener noreferrer">Outreach</a></li>
+							<li><a href="#about-me">About me</a></li>
+							<li><a href="mailto:m.c.villamil.sastre@rug.nl" class="button primary">Contact</a></li>
+							<li class="lang-switch"><a href="index.html" class="active" aria-current="page" lang="en" title="English">EN</a><a href="es.html" lang="es" hreflang="es" title="Español">ES</a></li>
 						</ul>
 					</nav>
 				</header>
 
 			<!-- Banner -->
 				<section id="banner">
-				
 					<div class="content">
 						<header>
 							<h2>Mariana Carolina Sastre</h2>
-							<p>PhD Student at Kapteyn Astronomical Institute<br />
-								University of Groningen, The Netherlands. <br />
-								Interest on exo/planetary geophysics.
-							
-							
-							
+							<p>
+								<span class="role">Exo/planetary geophysics</span>
+								<span class="line">PhD student at the Kapteyn Astronomical Institute</span>
+								<span class="line">University of Groningen, The Netherlands</span>
 							</p>
-				
+							<ul class="social">
+								<li><a href="https://orcid.org/0009-0008-7799-7976" target="_blank" rel="noopener noreferrer" aria-label="ORCID" title="ORCID"><i class="fab fa-orcid"></i></a></li>
+								<li><a href="https://github.com/planetmariana" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a></li>
+								<li><a href="https://bsky.app/profile/marianasastre.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky" title="Bluesky">
+									<!-- Bluesky logo: Font Awesome Free 6.7.2 (CC BY 4.0); not in the bundled FA 5 -->
+									<svg viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"/></svg>
+								</a></li>
+								<li><a href="https://www.linkedin.com/in/mariana-sastre-3853bb152" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+							</ul>
 						</header>
-						<span class="image"><img src="images/Saturn.jpeg" alt="" /></span>
+						<span class="image"><img src="images/Saturn.jpeg" alt="Saturn" /></span>
 					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
+					<a href="#hello" class="goto-next scrolly">Next</a>
 				</section>
 
 			<!-- One -->
-				<!-- One -->
 				<section id="hello" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/Magma.jpg" alt="MO"></span>
+					<span class="image fit main"><img src="images/Magma.jpg" alt="Magma"></span>
 
 					<div class="content">
 						<div class="container">
@@ -63,244 +75,328 @@
 										<h2>Hola, qué tal!</h2>
 									</header>
 									<p>
-										I'm an astrophysicist from Colombia 🇨🇴. My research focuses on the geophysical evolution of Magma Ocean Exoplanets. 
-										I want to understand how rocky exoplanets solidify and how their atmospheres and observability evolve during geological timescales. 
-										To do this, I use a combination of 1D numerical simulations that includes the evolution of the magma ocean, the atmosphere, and the solid mantle.
-										Right now, I'm working at the <b><a href="https://www.formingworlds.space"> Forming Worlds Laboratory</a></b>
-										under the supervision of <b><a href="https://www.formingworlds.space/about/tim-lichtenberg">Dr. Tim Lichtenberg.</a></b>
-
+										I'm an astrophysicist from Colombia 🇨🇴. My research focuses on the geophysical evolution of magma ocean exoplanets.
+										I want to understand how rocky exoplanets solidify, and how their atmospheres and observability evolve over geological timescales.
+										To do this, I use 1D numerical simulations that couple the magma ocean, the atmosphere and the solid mantle.
+										I work at the <b><a href="https://www.formingworlds.space" target="_blank" rel="noopener noreferrer">Forming Worlds Laboratory</a></b>
+										under the supervision of <b><a href="https://formingworlds.space/team/tim-lichtenberg/" target="_blank" rel="noopener noreferrer">Dr. Tim Lichtenberg</a></b>.
 										<br>
 										<br>
-										In this website, you will find information about my research, outreach activities, and my journey in Astronomy and nature.
+										On this website you will find my research, my outreach activities, and my journey through astronomy and nature.
 									</p>
 									<footer>
-										<a href="https://github.com/planetmariana/planetmariana.github.io/raw/main/CV_MarianaVillamilSastre.pdf" class="button scrolly" target="_blank">
+										<a href="CV_MarianaVillamilSastre.pdf" class="button primary" target="_blank" rel="noopener noreferrer">
 											Curriculum Vitae (CV)
 										</a>
 									</footer>
 								</div>
 
-
 								<!-- Photography Block -->
-								<div class="col-4 col-12-medium" style="text-align: center;">
-									<span class="image fit" style="display: inline-block; max-width: 90%; margin: 0 auto;">
-										<img src="images/Photo.JPG" alt="Aerial view taken with my drone Drogo" style="width:100%; height:auto; border-radius:10px;">
+								<div class="col-4 col-12-medium">
+									<span class="photo">
+										<img src="images/Photo.JPG" alt="Aerial view taken with my drone Drogo">
 									</span>
-									<p style="font-size:0.9em; text-align:justify; margin-top:0.75em;">
-										<i>Photography is one of my favorite ways to see the world. I’ve recently started taking aerial photos with my drone <b>Drogo</b> — stay tuned for the full gallery!</i>
+									<p class="photo-caption">
+										Photography is one of my favourite ways to see the world. I've recently started taking aerial photos with my drone <b>Drogo</b>. Stay tuned for the full gallery!
 									</p>
 								</div>
-				
+
 								<!-- Video Block -->
 								<div class="col-4 col-12-medium">
-									<div style="text-align: justify;">
-									<p><strong style="font-size:30px; color:#e44c65">Contenido en Español:</strong><br>
-										<p>
-											En este video encontrarás mi participación en el seminario de Geociencias de la Universidad de los Andes, Colombia. Allí explico mi trabajo de investigación de doctorado
-											sobre la evolución geofísica de los planetas con océanos de magma. El Departamento de Geociencias fue mi hogar durante mi pregrado y volver (aunque virtual)
-											fue una experiencia muy emotiva.
-										</p>
-										<iframe 
-											width="100%" 
-											height="315" 
-											src="https://www.youtube.com/embed/oewqm5nVja4" 
-											title="YouTube video player" 
-											frameborder="0" 
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+									<strong class="video-title">Contenido en Español</strong>
+									<p>
+										En este video encontrarás mi participación en el seminario de Geociencias de la Universidad de los Andes, Colombia. Allí explico mi trabajo de investigación de doctorado
+										sobre la evolución geofísica de los planetas con océanos de magma. El Departamento de Geociencias fue mi hogar durante mi pregrado y volver (aunque virtual)
+										fue una experiencia muy emotiva.
+									</p>
+									<div class="video">
+										<iframe
+											src="https://www.youtube.com/embed/oewqm5nVja4"
+											title="Seminario de Geociencias, Universidad de los Andes"
+											loading="lazy"
+											referrerpolicy="strict-origin-when-cross-origin"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 											allowfullscreen>
 										</iframe>
-										
 									</div>
 								</div>
-				
 
 							</div>
 						</div>
 					</div>
-					<a href="#aboutme" class="goto-next scrolly">Next</a>
+					<a href="#project" class="goto-next scrolly">Next</a>
 				</section>
-		
-			<!-- Two -->
-			<section id="project" class="spotlight style3 left">
-				<span class="image fit main">
-					<img src="images/exoV.jpeg" alt="ExoV">
-				</span>
-				<div class="content" style="text-align: justify;">
-					<header>
-						<h2 style="margin:0 0 0 0">Research projects</h2>
-						<br>
-						<br>
-						</header>							<!--<h3 style='color:#ff9500'>The brightest blobs at the Edge of the Universe</h3>-->
-					<p>
-						During the past five years, I have oriented my academic interestes towards the study of numerical methods on exoplanetary geophysics.
-						Therefore, after my bachelors I moved to Switzerland to learn more about exoplanetology. In this way, I did my master's thesis at the <b><a href= https://www.unige.ch/sciences/astro/en/about-us/astronomy-department/target="_blank" rel="noreferrer noopener">
-						Astronomical Observatory of Geneva,</a></b> on the context of the <b><a href=https://www.unige.ch/sciences/cvu/membres="_blank" rel="noreferrer noopener">
-						Center for Life in Universe.</a></b> 		
-						After that, I moved to The Netherlands for my PhD research: which focuses on understanding the solidification processes of rocky exoplanets and how
-						their atmospheres and observability evolve over geological timescales. Here, I provide an overview of my ongoing PhD project and summarize my
-						Master's thesis research, which includes my first collaborative paper.	
-						
-						
-						
-					</p>
-					<ul class="actions">
-						<li><a href="research.html" class="button small">Projects</a></li>
-					</ul>
-				</div>
-				<a href="#research" class="goto-next scrolly">Next</a>
-			</section>
 
+			<!-- Two -->
+				<section id="project" class="spotlight style3 left">
+					<span class="image fit main">
+						<img src="images/exoV.jpeg" alt="ExoV">
+					</span>
+					<div class="content" style="text-align: justify;">
+						<header>
+							<h2>Research projects</h2>
+						</header>
+						<p>
+							During my PhD, I have studied the thermal evolution of lava planets across a wide range of system ages, producing predictions for upcoming observations,
+							and investigated how oxygen fugacity controls mantle melting, with consequences for planetary structure and atmospheric composition.
+							Before my PhD, I completed my master's thesis at the
+							<b><a href="https://www.unige.ch/sciences/astro/en/about-us/astronomy-department" target="_blank" rel="noreferrer noopener">Astronomical Observatory of Geneva</a></b>,
+							within the <b><a href="https://www.unige.ch/sciences/cvu" target="_blank" rel="noreferrer noopener">Center for Life in the Universe</a></b>, which led to my first collaborative paper.
+							Below, I give an overview of my PhD research and first author publications.
+						</p>
+					</div>
+					<a href="#research" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- Research: publications -->
+				<section id="research" class="wrapper">
+					<div class="research-inner">
+
+						<div class="research-intro">
+							<ul class="themes">
+								<li>
+									<span class="theme-icon"><i class="fas fa-fire"></i></span>
+									<div><strong>Magma oceans</strong><span>How rocky planets cool and solidify</span></div>
+								</li>
+								<li>
+									<span class="theme-icon"><i class="fas fa-sync-alt"></i></span>
+									<div><strong>Interior&ndash;atmosphere exchange</strong><span>Volatiles, redox and outgassing</span></div>
+								</li>
+								<li>
+									<span class="theme-icon"><i class="fas fa-satellite"></i></span>
+									<div><strong>Observability</strong><span>Predictions for JWST</span></div>
+								</li>
+							</ul>
+							<div class="stats">
+								<a href="#publications" class="scrolly"><b>2</b><span>First-author papers</span></a>
+								<a href="#collaborations" class="scrolly"><b>5</b><span>Collaborative papers</span></a>
+							</div>
+						</div>
+
+						<h2 class="section-title" id="publications">First-author publications</h2>
+
+						<!-- Paper 1 -->
+						<article class="paper">
+							<figure>
+								<img src="images/Lava_planets.png" alt="Four planet end-states: bare rock, temperate planet with atmosphere, molten planet with a rock vapour atmosphere, and molten planet with a secondary atmosphere" loading="lazy">
+							</figure>
+							<div class="body">
+								<div class="meta">
+									<span class="tag lead">First author</span>
+									<span class="tag">2026</span>
+									<span class="tag journal">Submitted to ApJ</span>
+								</div>
+								<h3>Thermal evolution of lava planets across system ages: predictions for Hell of a Survey</h3>
+								<p class="authors"><strong>M. Sastre</strong>, T. Lichtenberg, L. Dang, A. Piette, H. S. Wang, M. L&oacute;pez-Morales, et al.</p>
+								<p class="summary">Ultra-short-period rocky planets can be hot enough on their daysides to keep a magma
+									ocean for their whole lives. Using the PROTEUS coupled interior&ndash;atmosphere framework, I ran a grid
+									of simulations and sorted the outcomes into six categories, based on how much of the interior stays
+									molten and whether an atmosphere survives that can carry heat around the planet. I then made
+									predictions for five targets of the JWST Cycle 4 <em>Hell of a Survey</em> program (8864): TOI-1807&nbsp;b,
+									TOI-2260&nbsp;b, TOI-431&nbsp;b, TOI-6255&nbsp;b and TOI-2431&nbsp;b.</p>
+								<ul class="highlights">
+									<li>Most targets evolve towards a bare-rock end state, with a global melt fraction of 20% or less.</li>
+									<li>Whether an atmosphere survives depends on the escape efficiency. There is a minimum efficiency below which volatile envelopes survive energy-limited escape.</li>
+									<li>A molten surface raises the partial pressure of most species. S<sub>2</sub> is the exception: it is enhanced when the surface is solid, so it may trace the interior's melt state.</li>
+									<li>These predictions will help interpret the survey's MIRI-LRS phase curves.</li>
+								</ul>
+								<div class="links">
+									<a class="button primary" href="https://arxiv.org/abs/2609.20155" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i>&nbsp; arXiv:2609.20155</a>
+								</div>
+							</div>
+						</article>
+
+						<!-- Paper 2 -->
+						<article class="paper">
+							<figure>
+								<img src="images/Melting.png" alt="Magma ocean depth for high and low volatile inventories, comparing oxidised (IW +4) and reduced (IW &minus;4) mantles" loading="lazy">
+							</figure>
+							<div class="body">
+								<div class="meta">
+									<span class="tag lead">First author</span>
+									<span class="tag">2026</span>
+									<span class="tag journal">A&amp;A 713, A159</span>
+								</div>
+								<h3>Geophysical and atmospheric implications of <i>f</i>O<sub>2</sub>-dependent melting on rocky exoplanets</h3>
+								<p class="authors"><strong>M. Sastre</strong>, T. Lichtenberg, L. Soucasse, D. J. Bower, H. Nicholls, I. Kamp</p>
+								<p class="summary">Most models of magma oceans assume Earth-like (oxidised) conditions or very hydrogen-rich
+									(sub-Neptune) ones, which leaves the range in between largely unexplored. In this paper I look at how
+									the redox state of the mantle, measured by its oxygen fugacity (<i>f</i>O<sub>2</sub>), changes its melting curves. I then
+									follow how those curves shape the planet's thermal evolution, melt fraction and atmosphere. I applied the
+									model to the super-Earth GJ&nbsp;1132&nbsp;b using the PROTEUS framework.</p>
+								<ul class="highlights">
+									<li>Reduced mantles tend to build H<sub>2</sub>&ndash;CO-rich atmospheres. Oxidised mantles tend to build thinner H<sub>2</sub>O&ndash;CO<sub>2</sub> envelopes.</li>
+									<li>In volatile-poor planets, redox-dependent melting noticeably shifts when the magma ocean crystallises. In volatile-rich planets, the effect on solidification time is small.</li>
+									<li>The volatile inventory and the surface oxygen fugacity are the main controls on the thermal state. Redox-dependent melting is a secondary effect.</li>
+									<li>The predicted atmospheric compositions give spectral signatures that JWST can test.</li>
+								</ul>
+								<div class="links">
+									<a class="button primary" href="https://doi.org/10.1051/0004-6361/202660017" target="_blank" rel="noopener noreferrer"><i class="fas fa-book-open"></i>&nbsp; Read in A&amp;A</a>
+									<a class="button" href="https://arxiv.org/abs/2606.20249" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i>&nbsp; arXiv:2606.20249</a>
+								</div>
+							</div>
+						</article>
+
+						<h2 class="section-title" id="collaborations">Collaborative papers</h2>
+
+						<ul class="pub-list">
+							<li>
+								<div>
+									<span class="tag">Co-author</span>
+									<a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260923091L/abstract" target="_blank" rel="noopener noreferrer">Super-Earth Interiors Shrink by About 10% as They Crystallise</a>
+									<p class="pub-authors">T. Lichtenberg, M. Attia, H. Nicholls, <strong>M. Sastre</strong>, D. J. Bower, K. Stuitje, F. C. Pascal, L. Soucasse,
+										D. Apai, P. Bos, R. Calder, L. Cesario, L. Dang, E. Decocq, M. van Dijk, M. Farhat, K. Hakim, T. Kimura, I. Kisv&aacute;rdai,
+										S. Krijt, Y. Miguel, I. Panagiotou, E. Postolec, M. Schlecker, S. Seager, A. Shahar, O. Shorttle, P. A. Sossi, W. van Westrenen</p>
+								</div>
+								<span class="pub-year">2026</span>
+							</li>
+							<li>
+								<div>
+									<span class="tag">Co-author</span>
+									<a href="https://scixplorer.org/abs/2026A%26A...713A.225A/abstract" target="_blank" rel="noopener noreferrer">PALEOS: Multiphase equations of state and mass&ndash;radius relations for exoplanet interiors</a>
+									<p class="pub-authors">M. Attia, T. Lichtenberg, E. Jungov&aacute;, <strong>M. Sastre</strong></p>
+								</div>
+								<span class="pub-year">2026</span>
+							</li>
+							<li>
+								<div>
+									<span class="tag">Co-author</span>
+									<a href="https://scixplorer.org/abs/2026PSJ.....7..108L/abstract" target="_blank" rel="noopener noreferrer">Coupled atmospHere Interior modeL Intercomparison (CHILI)&mdash;Protocol Version 1.0: A CUISINES Intercomparison Project of Magma Ocean Models</a>
+									<p class="pub-authors">T. Lichtenberg, L. Schaefer, J. Krissansen-Totton, Y. Miguel, D. E. Sergeev, P. Baumeister, J. Cmiel, L. J. Janssen,
+										T. G. Nguyen, Y. Miyazaki, H. Nicholls, A. Papesh, H. Pelissard, B. Peng, J. Perez, E. Postolec, <strong>M. Sastre</strong>,
+										A. Salvador, H. Spreeuw, A. Zorzi, T. J. Fauchez, K. Hamano, J. Leconte, M. Maurice, L. Noack, L. Soucasse</p>
+								</div>
+								<span class="pub-year">2026</span>
+							</li>
+							<li>
+								<div>
+									<span class="tag">Co-author</span>
+									<a href="https://scixplorer.org/abs/2026A%26A...707A.101B/abstract" target="_blank" rel="noopener noreferrer">Estimation of the tidal heating in the TRAPPIST-1 planets</a>
+									<p class="pub-authors">E. Bolmont, <strong>M. Sastre</strong>, A. Revol, M. Kervazo, G. Tobie</p>
+								</div>
+								<span class="pub-year">2026</span>
+							</li>
+							<li>
+								<div>
+									<span class="tag">Co-author</span>
+									<a href="https://www.aanda.org/articles/aa/pdf/2024/11/aa51532-24.pdf" target="_blank" rel="noopener noreferrer">Drifts of the substellar points of the TRAPPIST-1 planets</a>
+									<p class="pub-authors">A. Revol, &Eacute;. Bolmont, <strong>M. Sastre</strong>, G. Tobie, A.-S. Libert, M. Kervazo, S. Blanco-Cuaresma</p>
+								</div>
+								<span class="pub-year">2024</span>
+							</li>
+						</ul>
+
+						<h2 class="section-title" id="master">Master thesis</h2>
+
+						<ul class="pub-list">
+							<li>
+								<div>
+									<span class="tag">Master thesis</span>
+									<a href="https://github.com/planetmariana/planetmariana.github.io/raw/main/Thesis_Master.pdf" target="_blank" rel="noopener noreferrer">Geodynamical regimes in Earth-like exoplanets</a>
+									<p class="pub-authors">Astronomical Observatory of Geneva, University of Geneva, Switzerland</p>
+								</div>
+							</li>
+						</ul>
+
+					</div>
+				</section>
 
 			<!-- Three -->
-				<section id="three" class="spotlight style3 right" >
-					<span class="image fit main bottom"><img src="images/Reca_2.jpg" alt="" /></span>
+				<section id="three" class="spotlight style3 right">
+					<span class="image fit main bottom"><img src="images/Reca_2.jpg" alt="RECA" /></span>
 					<div class="content" style="text-align: justify;">
 						<header>
 							<h2>Outreach activities</h2>
 						</header>
-						<p>I've been always interested on helping the astronomical community in my country to develop and
-							 expand to territories with underrepresented communities. For this, I joinned the Colombian
-							Network of Astronomy Students (RECA), which is an association that aims to create spaces
-							that allow the exchange of ideas and significant experiences among its members, where we work 
-							for the realization of various academic and social impact projects. One of these projects that
-							I'm involved in as an orginizing committee member, is the Mentorship program. A program designed
-							to help BSc. students to get into a gradutate program and guide them with the application process
-							in a 1-1 weekly meetings. With the mentors being colombian astronomers working on highly recognized 
+						<p>I've always wanted to help the astronomical community in my country grow and reach underrepresented communities.
+							For this, I joined the Colombian Network of Astronomy Students (RECA), an association that creates spaces for its
+							members to exchange ideas and experiences, and that runs academic and social-impact projects. I'm on the organising
+							committee of one of them, the Mentorship Program. It helps BSc students get into graduate programs through weekly
+							1-on-1 meetings that guide them through the application process. The mentors are Colombian astronomers working at
 							institutions all around the world.</p>
 						<ul class="actions">
-
-							<li><a href="https://www.astroreca.org/en" class="button">Learn More about RECA</a></li>
+							<li><a href="https://www.astroreca.org/en" class="button primary" target="_blank" rel="noopener noreferrer">Learn more about RECA</a></li>
 						</ul>
 					</div>
-					<a href="#four" class="goto-next scrolly">Next</a>
+					<a href="#about-me" class="goto-next scrolly">Next</a>
 				</section>
 
-
-				
 			<!-- About Me -->
-			<!-- About Me -->
-<!-- About Me -->
-			<section id="about-me" class="wrapper style1 special fade-up">
-				<div class="container">
-					<header class="major">
-						<h2 style="color: #e63946;"> About me and  🌋La volcánica project 🌋</h2>
-						<p>
-							I had the immense priviledge of growing up surrounded by the beautiful nature of the Andean mountains.
-							There, I developed a deep love for this planet's landscapes, during my bachelor I had the opportunity to study Geoscience alongside Physics, which allowed me to learn about the processes that made this planet the way it is. After that, I could never see nature the same way again.
-							I began to notice the beauty of the world around me and how everything is connected. I love hiking, climbing, running, and spending time photographing nature. I believe these experiences have shaped my perspective on life and my work as a scientist.
-							
-							Somehow, during this journey between magma ocean exoplanets and outdoor adventures sparked a deep interest and passion for volcanoes. I can’t visit 55 Cancri e, but I can visit volcanoes here on Earth. That’s where my project "La Volcánica" comes from.
-							I plan to visit as many volcanoes as possible, I want to explore the full potential of my body and mind in high altitude environments that makes me feel in other planet.
-							
-							Below, you’ll find some of the volcanoes I’ve visited since this project started in 2016. I hope to keep adding more volcanoes, mountains, and rainforests to this list and share my experiences with you. Random fact about me : I -REALLY- love documentaries :)
-
-						</p>					</header>
-					<div class="box alt">
-						<div class="row gtr-uniform">
-							<!-- Image 1 -->
-
-							<!-- Image 2 -->
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="image fit main">
-									<img src="images/Ruiz.jpg" alt="Sunset at a volcano">
-								</span>
-								<p class="image-caption">Volcán Nevado del Ruiz (4450m), Colombia (2016)</p>
-
-							</section>
-							<!-- Image 3 -->
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="image fit main">
-									<img src="images/Santa_isabelV.jpg" alt="Climbing in the Andes">
-								</span>
-								<p class="image-caption">Volcán Nevado Santa Isabel (4800m), Colombia (2017)</p>
-
-							</section>
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="image fit main">
-									<img src="images/cocuy.jpg" alt="Climbing in the Andes">
-								</span>
-								<p class="image-caption">Nevado del Cocuy (5100m), Colombia (2021)</p>
-
-							</section>
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="image fit main">
-									<img src="images/vulcanomariana.jpg" alt="Exploring a glacier">
-								</span>
-								<p class="image-caption">Volcán de Fuego (4000m), Guatemala. (2025)</p>
-
-							</section>
-							<!-- Image 4 (Repeat Image 1) -->
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="image fit main">
-									<img src="images/charlevoir.jpg" alt="Exploring a glacier">
-								</span>
-								<p class="image-caption">La Traversée de Charlevoix, Québec, Canada (2025)</p>
-
-							</section>
-							<!-- Image 5 (Repeat Image 2) -->
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="image fit main">
-									<img src="images/montblanc.jpg" alt="Sunset at a volcano">
-
-								</span>
-								<p class="image-caption">La Jonction, Mont Blanc, France (2025)</p>
-
-							</section>
-							<!-- Image 6 (Repeat Image 3) -->
-
-							<!-- Image 7 (Repeat Image 1) -->
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="image fit main">
-									<img src="images/Ciudad_perdida.jpg" alt="Exploring a glacier">
-								</span>
-								<p class="image-caption">Ciudad Perdida, Magdalena, Colombia (2025)</p>
-
-							</section>
-							<!-- Image 8 (Repeat Image 2) -->
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="image fit main">
-									<img src="images/grindelwald.jpg" alt="Exploring a glacier">
-								</span>
-								<p class="image-caption">Grindelwald, Switzerland (2022)</p>
-
-							</section>
-							<!-- Image 9 (Repeat Image 3) -->
-							<section class="col-4 col-6-medium col-12-xsmall">
-								<span class="image fit main">
-									<img src="images/Kandersteg.jpg" alt="Sunset at a volcano">
-
-								</span>
-								<p class="image-caption">Kandersteg, Switzerland (2023)</p>
-
-							</section>
+				<section id="about-me" class="wrapper style1 special fade-up">
+					<div class="container">
+						<header class="major">
+							<h2>About me &amp; <span class="accent">🌋 La Volcánica project 🌋</span></h2>
+							<p>
+								I had the immense privilege of growing up surrounded by the beautiful nature of the Andes.
+								There, I developed a deep love for this planet's landscapes. During my bachelor's I studied Geoscience alongside Physics, which taught me about the processes that made this planet the way it is. After that, I could never see nature the same way again.
+								I began to notice the beauty of the world around me and how everything is connected. I love hiking, climbing, running, and photographing nature. These experiences have shaped my perspective on life and my work as a scientist.
+								<br><br>
+								Somewhere between magma ocean exoplanets and outdoor adventures, I developed a deep passion for volcanoes. I can't visit 55 Cancri e, but I can visit volcanoes here on Earth. That's where my project "La Volcánica" comes from.
+								I plan to visit as many volcanoes as possible, and to explore the full potential of my body and mind in high-altitude environments that make me feel like I'm on another planet.
+								<br><br>
+								Below are some of the volcanoes and mountains I've visited since the project started in 2016. I hope to keep adding more volcanoes, mountains and rainforests to this list and share my experiences with you. Random fact about me: I <em>really</em> love documentaries :)
+							</p>
+						</header>
+						<div class="box alt">
+							<div class="row gtr-uniform">
+								<section class="col-4 col-6-medium col-12-xsmall gallery-item">
+									<span class="image fit main"><img src="images/Ruiz.jpg" alt="Volcán Nevado del Ruiz" loading="lazy"></span>
+									<p class="image-caption"><strong>Volcán Nevado del Ruiz</strong>4450 m a.s.l. · Colombia · 2016</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall gallery-item">
+									<span class="image fit main"><img src="images/Santa_isabelV.jpg" alt="Volcán Nevado Santa Isabel" loading="lazy"></span>
+									<p class="image-caption"><strong>Volcán Nevado Santa Isabel</strong>4800 m a.s.l. · Colombia · 2017</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall gallery-item">
+									<span class="image fit main"><img src="images/cocuy.jpg" alt="Nevado del Cocuy" loading="lazy"></span>
+									<p class="image-caption"><strong>Nevado del Cocuy</strong>5100 m a.s.l. · Colombia · 2021</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall gallery-item">
+									<span class="image fit main"><img src="images/vulcanomariana.jpg" alt="Volcán de Fuego" loading="lazy"></span>
+									<p class="image-caption"><strong>Volcán de Fuego</strong>4000 m a.s.l. · Guatemala · 2025</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall gallery-item">
+									<span class="image fit main"><img src="images/charlevoir.jpg" alt="La Traversée de Charlevoix" loading="lazy"></span>
+									<p class="image-caption"><strong>La Traversée de Charlevoix</strong>Québec, Canada · 2025</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall gallery-item">
+									<span class="image fit main"><img src="images/montblanc.jpg" alt="La Jonction, Mont Blanc" loading="lazy"></span>
+									<p class="image-caption"><strong>La Jonction, Mont Blanc</strong>France · 2025</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall gallery-item">
+									<span class="image fit main"><img src="images/Ciudad_perdida.jpg" alt="Ciudad Perdida" loading="lazy"></span>
+									<p class="image-caption"><strong>Ciudad Perdida</strong>Magdalena, Colombia · 2025</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall gallery-item">
+									<span class="image fit main"><img src="images/beaufortain.jpg" alt="Tour du Beaufortain" loading="lazy" style="object-position: center 62%;"></span>
+									<p class="image-caption"><strong>Tour du Beaufortain</strong>France · 2026</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall gallery-item">
+									<span class="image fit main"><img src="images/madeira.jpg" alt="Madeira" loading="lazy" style="object-position: center 55%;"></span>
+									<p class="image-caption"><strong>Madeira</strong>Portugal · 2026</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall gallery-item">
+									<span class="image fit main"><img src="images/grindelwald.jpg" alt="Grindelwald" loading="lazy"></span>
+									<p class="image-caption"><strong>Grindelwald</strong>Switzerland · 2022</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall gallery-item">
+									<span class="image fit main"><img src="images/Kandersteg.jpg" alt="Kandersteg" loading="lazy"></span>
+									<p class="image-caption"><strong>Kandersteg</strong>Switzerland · 2023</p>
+								</section>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-
-			<style>
-				.image.fit.main img {
-					width: 100%;
-					height: 100%;
-					object-fit: cover; /* Ensures the image is cropped to fit as a square */
-					object-position: center; /* Keeps the center of the image in view */
-				}
-			</style>
-				
-				
-
-
-
+				</section>
 
 			<!-- Five -->
 				<section id="five" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
 							<h2>Any idea for a project? 🌋</h2>
-							<p>Let’s chat about it :)</p>
+							<p>Let's chat about it :)</p>
 						</header>
 						<div class="cta">
-							<a href="mailto:m.c.villamil.sastre@rug.nl" class="button primary">Send Me an Email</a>
+							<a href="mailto:m.c.villamil.sastre@rug.nl" class="button primary">Send me an email</a>
 						</div>
 					</div>
 				</section>
@@ -308,13 +404,14 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="https://x.com/marianasastre96?s=21&t=DExbTyLo2R3LhdZM5-yitQ" target="_blank" id="twitter-link" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://github.com/planetmariana" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="www.linkedin.com/in/mariana-sastre-3853bb152" target="_blank"><span class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						</ul>
+						<li><a href="https://bsky.app/profile/marianasastre.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky" class="bsky"><svg viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"/></svg></a></li>
+						<li><a href="https://orcid.org/0009-0008-7799-7976" target="_blank" rel="noopener noreferrer" class="icon brands fa-orcid"><span class="label">ORCID</span></a></li>
+						<li><a href="https://github.com/planetmariana" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/mariana-sastre-3853bb152" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:m.c.villamil.sastre@rug.nl" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Mariana Sastre</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 

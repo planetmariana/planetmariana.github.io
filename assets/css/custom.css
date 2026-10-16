@@ -1,0 +1,882 @@
+/*
+	Custom overrides for planetmariana.github.io
+	Loaded after main.css (HTML5 UP "Landed"). Only restyles; page structure is unchanged.
+*/
+
+:root {
+	--accent: #e44c65;
+	--accent-warm: #ff8a3d;
+	--ink: #120b0e;
+	--panel: rgba(18, 12, 16, 0.82);
+	--line: rgba(255, 255, 255, 0.1);
+	--text: rgba(255, 255, 255, 0.82);
+	--muted: rgba(255, 255, 255, 0.6);
+	--lava: linear-gradient(135deg, #ff8a3d 0%, #e44c65 55%, #8e1f3a 100%);
+}
+
+html { scroll-behavior: smooth; }
+
+html, body { background: var(--ink); }
+
+/* Roboto 100 is very thin on most screens; 300 reads much better */
+body, input, select, textarea {
+	color: var(--text);
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Outfit", "Roboto", Helvetica, sans-serif;
+	font-weight: 500;
+	letter-spacing: -0.01em;
+}
+
+strong, b { font-weight: 500; }
+
+::selection { background: rgba(228, 76, 101, 0.45); color: #fff; }
+
+/* Buttons */
+
+.button {
+	border-radius: 999px;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+	.button:hover { transform: translateY(-2px); }
+
+	.button.primary {
+		background: var(--lava);
+		box-shadow: 0 6px 18px rgba(228, 76, 101, 0.35);
+	}
+
+		.button.primary:hover {
+			color: #fff !important;
+			box-shadow: 0 8px 24px rgba(255, 138, 61, 0.45);
+		}
+
+/* Header / nav */
+
+body.landing #header {
+	background: linear-gradient(180deg, rgba(10, 6, 9, 0.75) 0%, rgba(10, 6, 9, 0) 100%);
+}
+
+#header nav ul li a:not(.button) {
+	font-family: "Outfit", "Roboto", sans-serif;
+	font-weight: 500 !important;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	position: relative;
+}
+
+	#header nav ul li a:not(.button)::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0.9em;
+		height: 2px;
+		background: var(--lava);
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 0.25s ease;
+	}
+
+	#header nav ul li a:not(.button):hover::after { transform: scaleX(1); }
+
+/* Language switch (EN | ES) in the top nav */
+
+#header nav ul li.lang-switch {
+	display: inline-flex;
+	align-items: center;
+	vertical-align: middle;
+	height: 2em;
+	line-height: 2em;
+	padding: 2px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 999px;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+	#header nav ul li.lang-switch a {
+		height: auto;
+		line-height: 1.7em;
+		padding: 0 0.75em;
+		border-radius: 999px;
+		font-size: 0.75em;
+		letter-spacing: 0.1em;
+		color: rgba(255, 255, 255, 0.7);
+	}
+
+		#header nav ul li.lang-switch a::after { display: none; }
+
+		#header nav ul li.lang-switch a.active {
+			background: #fff;
+			color: var(--ink) !important;
+		}
+
+/* Banner */
+
+#banner {
+	top: 0;
+	opacity: 1;
+	background-image:
+		radial-gradient(ellipse at 70% 50%, rgba(18, 11, 14, 0.15) 0%, rgba(18, 11, 14, 0.85) 75%),
+		url("../../images/forming.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+	#banner .content header h2 {
+		font-size: 3.4em;
+		line-height: 1.1em;
+		font-weight: 600;
+		text-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+	}
+
+	#banner .content header p {
+		font-weight: 300;
+		font-size: 1.05em;
+		line-height: 1.7em;
+		color: rgba(255, 255, 255, 0.85);
+		margin-top: 1em;
+	}
+
+		/* The theme hides <br> in header paragraphs on small screens, so use blocks instead */
+		#banner .content header p .line { display: block; }
+
+		#banner .content header p .role {
+			display: block;
+			margin-bottom: 0.4em;
+			font-family: "Outfit", "Roboto", sans-serif;
+			font-weight: 500;
+			letter-spacing: 0.18em;
+			text-transform: uppercase;
+			font-size: 0.8em;
+			color: var(--accent-warm);
+		}
+
+	#banner .social {
+		list-style: none;
+		display: flex;
+		justify-content: flex-end;
+		gap: 0.7em;
+		margin: 1.4em 0 0;
+		padding: 0;
+	}
+
+		#banner .social li { padding: 0; margin: 0; }
+
+		#banner .social a {
+			display: grid;
+			place-items: center;
+			width: 2.6em;
+			height: 2.6em;
+			border: 1px solid rgba(255, 255, 255, 0.25);
+			border-radius: 50%;
+			background: rgba(255, 255, 255, 0.06);
+			color: #fff;
+			font-size: 1em;
+			transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+		}
+
+			#banner .social a:hover {
+				transform: translateY(-3px);
+				background: var(--lava);
+				border-color: transparent;
+				color: #fff !important;
+			}
+
+			#banner .social svg {
+				width: 1.05em;
+				height: 1.05em;
+			}
+
+	#banner .content .image {
+		box-shadow:
+			0 0 0 6px rgba(255, 255, 255, 0.06),
+			0 0 60px 10px rgba(255, 138, 61, 0.35),
+			0 0 120px 30px rgba(228, 76, 101, 0.2);
+		animation: glow 6s ease-in-out infinite alternate;
+	}
+
+		#banner .content .image:before { display: none; }
+
+@keyframes glow {
+	from { box-shadow: 0 0 0 6px rgba(255,255,255,0.06), 0 0 50px 6px rgba(255,138,61,0.3), 0 0 110px 25px rgba(228,76,101,0.15); }
+	to   { box-shadow: 0 0 0 6px rgba(255,255,255,0.06), 0 0 70px 14px rgba(255,138,61,0.45), 0 0 140px 40px rgba(228,76,101,0.25); }
+}
+
+/* Spotlight panels */
+
+.spotlight .content {
+	background: var(--panel);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+	.spotlight.style1 .content,
+	.spotlight.style3 .content { border-color: var(--accent); }
+
+	.spotlight .content h2 {
+		text-align: left; /* panels justify their text inline; a justified two-line heading spreads out */
+		font-size: 1.9em;
+		line-height: 1.25em;
+		position: relative;
+		padding-bottom: 0.5em;
+		margin-bottom: 0.8em;
+	}
+
+		.spotlight .content h2::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 2.5em;
+			height: 3px;
+			border-radius: 3px;
+			background: var(--lava);
+		}
+
+	.spotlight .content p { line-height: 1.8em; }
+
+	.spotlight .content a:not(.button) { border-bottom-color: rgba(228, 76, 101, 0.5); }
+
+	/* On small screens the section image is shown inline; crop it instead of stretching */
+	.spotlight .image.main img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+/* "Hola" section: three columns read as cards */
+
+/* The theme pins this panel to the bottom of a 100vh section; with three columns it is
+   taller than short laptop screens, so its top got clipped. Let the section grow instead. */
+@media screen and (min-width: 981px) {
+	#hello.spotlight {
+		height: auto;
+		min-height: 100vh;
+		padding-top: 30vh;
+	}
+
+		#hello.spotlight .content {
+			position: relative;
+			bottom: auto;
+			padding: 4em 0 5em 0;
+		}
+}
+
+/* Same issue for the side panels (Research projects, Outreach): a fixed 100vh with overflow hidden
+   clipped the longer Spanish text and its button on short screens. Let them grow with their content. */
+@media screen and (min-width: 981px) {
+	.spotlight.left,
+	.spotlight.right {
+		height: auto;
+		min-height: 100vh;
+	}
+
+		.spotlight.left .content,
+		.spotlight.right .content {
+			position: relative;
+			top: auto;
+			height: auto;
+			min-height: 100vh;
+		}
+
+		.spotlight.right .content { margin-left: auto; }
+}
+
+/* Theme gutters only pad the left of each column, so text ran into the next column's divider */
+#hello .content .row { margin-left: 0; margin-top: 0; }
+
+#hello .content .row > div {
+	padding-top: 0.5em;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+}
+
+	#hello .content .row > div:first-child { padding-left: 0; }
+	#hello .content .row > div:last-child { padding-right: 0; }
+
+	#hello .content .row > div + div {
+		border-left: 1px solid var(--line);
+	}
+
+#hello .photo {
+	display: block;
+	max-width: 85%;
+	margin: 0 auto;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+	#hello .photo img {
+		width: 100%;
+		height: auto;
+		display: block;
+		transition: transform 0.6s ease;
+	}
+
+	#hello .photo:hover img { transform: scale(1.04); }
+
+	#hello .photo-caption {
+		font-size: 0.9em;
+		font-style: italic;
+		color: var(--muted);
+		text-align: center;
+		margin-top: 1em;
+	}
+
+#hello .video-title {
+	display: block;
+	font-family: "Outfit", "Roboto", sans-serif;
+	font-size: 1.6em;
+	font-weight: 600;
+	line-height: 1.3em;
+	margin-bottom: 0.6em;
+	background: var(--lava);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+#hello .video {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+	#hello .video iframe {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+
+/* Research: publications (follows the "Research projects" spotlight) */
+
+#research {
+	position: relative;
+	z-index: 22;
+	background:
+		linear-gradient(180deg, rgba(14, 8, 11, 0.78) 0%, rgba(14, 8, 11, 0.6) 50%, rgba(14, 8, 11, 0.82) 100%),
+		url("../../images/Magma.jpg") center / cover no-repeat fixed;
+	box-shadow: 0 -0.25em 0.5em rgba(0, 0, 0, 0.25);
+}
+
+	/* Fixed backgrounds misbehave on mobile Safari; the theme does the same for spotlights */
+	body.is-touch #research { background-attachment: scroll; }
+
+	#research .research-inner {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 0 1.5em;
+		font-size: 0.88em;
+	}
+
+	#research ul { list-style: none; padding: 0; }
+
+	#research .research-intro {
+		display: grid;
+		grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+		gap: 1.5em;
+		align-items: stretch;
+		background: var(--panel);
+		border: 1px solid var(--line);
+		border-radius: 16px;
+		padding: 1.4em 1.6em;
+		box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), 0 0 80px rgba(228, 76, 101, 0.1);
+	}
+
+	#research .themes {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1em;
+		margin: 0;
+	}
+
+		#research .themes li {
+			display: flex;
+			align-items: center;
+			gap: 0.8em;
+			margin: 0;
+			padding: 0;
+		}
+
+		#research .theme-icon {
+			flex-shrink: 0;
+			width: 2.6em;
+			height: 2.6em;
+			border-radius: 50%;
+			display: grid;
+			place-items: center;
+			color: #fff;
+			background: var(--lava);
+			box-shadow: 0 4px 14px rgba(228, 76, 101, 0.35);
+		}
+
+		#research .themes strong {
+			display: block;
+			color: #fff;
+			font-family: "Outfit", "Roboto", sans-serif;
+			line-height: 1.3em;
+		}
+
+		#research .themes span:not(.theme-icon) {
+			display: block;
+			color: var(--muted);
+			font-size: 0.85em;
+			line-height: 1.4em;
+		}
+
+	#research .stats {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.8em;
+	}
+
+		#research .stats a {
+			border: 1px solid var(--line);
+			border-radius: 12px;
+			padding: 0.6em 1em;
+			color: var(--text);
+			background: rgba(255, 255, 255, 0.03);
+			transition: border-color 0.2s ease, background 0.2s ease;
+		}
+
+			#research .stats a:hover {
+				border-color: rgba(228, 76, 101, 0.6);
+				background: rgba(228, 76, 101, 0.08);
+				color: var(--text) !important;
+			}
+
+		#research .stats b {
+			display: block;
+			font-family: "Outfit", "Roboto", sans-serif;
+			font-size: 1.9em;
+			line-height: 1.1em;
+			font-weight: 600;
+			color: #fff;
+		}
+
+		#research .stats span {
+			font-size: 0.78em;
+			color: var(--muted);
+		}
+
+	#research .section-title {
+		display: flex;
+		align-items: center;
+		gap: 0.8em;
+		margin: 2.5em 0 1.2em;
+		font-size: 1.4em;
+		line-height: 1.3em;
+		scroll-margin-top: 1em;
+	}
+
+		#research .section-title::after {
+			content: "";
+			flex: 1;
+			height: 1px;
+			background: linear-gradient(90deg, var(--accent), transparent);
+		}
+
+	/* Paper cards */
+
+	#research .paper {
+		background: var(--panel);
+		border: 1px solid var(--line);
+		border-radius: 14px;
+		overflow: hidden;
+		margin-bottom: 2em;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+		transition: transform 0.25s ease, border-color 0.25s ease;
+	}
+
+		#research .paper:hover {
+			transform: translateY(-3px);
+			border-color: rgba(228, 76, 101, 0.45);
+		}
+
+		#research .paper figure {
+			margin: 0;
+			background: #000;
+			border-bottom: 1px solid var(--line);
+		}
+
+			#research .paper figure img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+
+		#research .paper .body { padding: 1.8em 2em 2em; }
+
+		#research .paper h3 {
+			font-size: 1.35em;
+			line-height: 1.4em;
+			margin: 0 0 0.4em;
+		}
+
+		#research .paper p.summary {
+			margin: 0 0 1.2em;
+			line-height: 1.75em;
+			text-align: justify;
+		}
+
+	/* Spanish page: official English title under the translated one */
+	#research .orig-title {
+		margin: -0.1em 0 0.6em;
+		font-size: 0.85em;
+		font-style: italic;
+		line-height: 1.5em;
+		color: var(--muted);
+	}
+
+	#research .meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5em;
+		margin-bottom: 1em;
+	}
+
+	#research .tag {
+		display: inline-block;
+		font-size: 0.72em;
+		font-weight: 400;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		padding: 0.25em 0.8em;
+		border-radius: 999px;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		color: var(--muted);
+		line-height: 1.6em;
+	}
+
+		#research .tag.lead {
+			border-color: var(--accent);
+			color: #fff;
+			background: rgba(228, 76, 101, 0.18);
+		}
+
+		#research .tag.journal {
+			border-color: rgba(255, 138, 61, 0.6);
+			color: var(--accent-warm);
+		}
+
+	#research .authors {
+		color: var(--muted);
+		font-size: 0.88em;
+		margin: 0 0 1.2em;
+	}
+
+		#research .authors strong,
+		#research .pub-authors strong { color: #fff; font-weight: 500; }
+
+	#research .highlights { margin: 0 0 1.6em; }
+
+		#research .highlights li {
+			position: relative;
+			padding-left: 1.5em;
+			margin-bottom: 0.55em;
+			line-height: 1.6em;
+		}
+
+			#research .highlights li::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0.6em;
+				width: 0.5em;
+				height: 0.5em;
+				border-radius: 50%;
+				background: var(--lava);
+			}
+
+	#research .links { display: flex; flex-wrap: wrap; gap: 0.8em; }
+
+		#research .links .button {
+			height: 2.6em;
+			line-height: 2.6em;
+			padding: 0 1.6em;
+			font-size: 0.85em;
+		}
+
+	/* Collaborative papers: title, authors, link */
+
+	#research .pub-list {
+		margin: 0 0 1em;
+		background: var(--panel);
+		border: 1px solid var(--line);
+		border-radius: 14px;
+		overflow: hidden;
+	}
+
+		#research .pub-list li {
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
+			gap: 1.5em;
+			padding: 1.1em 1.6em;
+			margin: 0;
+			border-top: 1px solid var(--line);
+		}
+
+			#research .pub-list li:first-child { border-top: 0; }
+
+		#research .pub-list .tag {
+			margin: 0 0.6em 0.3em 0;
+			vertical-align: middle;
+		}
+
+		#research .pub-list a {
+			color: #fff;
+			border-bottom: 0;
+			line-height: 1.5em;
+		}
+
+			#research .pub-list a::after {
+				content: "\f35d";
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				font-size: 0.7em;
+				margin-left: 0.6em;
+				color: var(--accent);
+			}
+
+		#research .pub-authors {
+			margin: 0.4em 0 0;
+			color: var(--muted);
+			font-size: 0.85em;
+			line-height: 1.55em;
+		}
+
+		#research .pub-year {
+			flex-shrink: 0;
+			color: var(--muted);
+			font-size: 0.85em;
+		}
+
+	/* Master thesis: image beside text */
+
+	#research .compact {
+		display: grid;
+		grid-template-columns: 300px 1fr;
+	}
+
+		#research .compact figure {
+			border-bottom: 0;
+			border-right: 1px solid var(--line);
+		}
+
+			#research .compact figure img {
+				height: 100%;
+				object-fit: cover;
+			}
+
+		#research .compact h3 { font-size: 1.15em; }
+
+@media screen and (max-width: 980px) {
+	#research .research-intro { grid-template-columns: 1fr; }
+	#research .research-inner { padding: 0; }
+}
+
+@media screen and (max-width: 736px) {
+	#research .themes { grid-template-columns: 1fr; }
+	#research .paper .body { padding: 1.4em 1.2em 1.5em; }
+	#research .compact { grid-template-columns: 1fr; }
+	#research .compact figure { border-right: 0; border-bottom: 1px solid var(--line); }
+	#research .pub-list li { padding: 1em 1.1em; }
+}
+
+/* About me / gallery */
+
+#about-me {
+	background:
+		linear-gradient(180deg, rgba(14, 8, 11, 0.82) 0%, rgba(14, 8, 11, 0.62) 50%, rgba(14, 8, 11, 0.85) 100%),
+		url("../../images/Magma.jpg") center / cover no-repeat fixed;
+}
+
+	body.is-touch #about-me { background-attachment: scroll; }
+
+	#about-me header.major h2 {
+		color: #fff;
+		font-size: 2.2em;
+		line-height: 1.3em;
+	}
+
+		#about-me header.major h2 .accent {
+			background: var(--lava);
+			-webkit-background-clip: text;
+			background-clip: text;
+			color: transparent;
+		}
+
+	#about-me header.major p {
+		max-width: 48em;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		hyphens: auto;
+		line-height: 1.85em;
+		color: var(--text);
+	}
+
+	#about-me .gallery-item {
+		margin-bottom: 1em;
+	}
+
+		#about-me .gallery-item .image.fit {
+			margin: 0;
+			border-radius: 12px;
+			overflow: hidden;
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+		}
+
+			#about-me .gallery-item .image.fit:before { display: none; }
+
+			#about-me .gallery-item .image.fit img {
+				width: 100%;
+				aspect-ratio: 4 / 3;
+				object-fit: cover;
+				object-position: center;
+				border-radius: 0;
+				transition: transform 0.6s ease, filter 0.6s ease;
+				filter: saturate(0.92);
+			}
+
+			#about-me .gallery-item:hover .image.fit img {
+				transform: scale(1.06);
+				filter: saturate(1.1);
+			}
+
+		#about-me .image-caption {
+			text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
+			margin: 0.8em 0 0;
+			font-size: 0.85em;
+			line-height: 1.5em;
+			color: var(--muted);
+		}
+
+			#about-me .image-caption strong {
+				display: block;
+				color: #fff;
+				font-size: 1.05em;
+			}
+
+/* Call to action */
+
+#five.wrapper.style2 {
+	background: var(--lava);
+}
+
+	#five h2 { font-size: 2.2em; }
+
+	#five .button.primary {
+		background: #fff;
+		color: var(--accent) !important;
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+	}
+
+/* Footer */
+
+#footer {
+	background: #0d080b;
+	border-top: 1px solid var(--line);
+	padding: 3.5em 0;
+}
+
+	#footer .icons a {
+		color: var(--muted);
+		border: 0;
+		font-size: 1.3em;
+		transition: color 0.2s ease, transform 0.2s ease;
+		display: inline-block;
+	}
+
+		#footer .icons a:hover { transform: translateY(-3px); }
+
+		#footer .icons a.bsky svg {
+			width: 1.7em;
+			height: 1.7em;
+			vertical-align: -0.25em;
+		}
+
+/* Theme's mobile title bar copies #logo, which this site doesn't have ("undefined") */
+#titleBar .title { visibility: hidden; }
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 980px) {
+	.spotlight .content { background-color: var(--ink); }
+
+		.spotlight .content h2::after {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+	#hello .content .row > div,
+	#hello .content .row > div:first-child,
+	#hello .content .row > div:last-child { padding-left: 0; padding-right: 0; }
+
+	#hello .content .row > div + div {
+		border-left: 0;
+		border-top: 1px solid var(--line);
+		padding-top: 2em;
+		margin-top: 1em;
+	}
+
+	#banner .content header h2 { font-size: 2.6em; }
+	#banner .social { justify-content: center; }
+}
+
+@media screen and (max-width: 736px) {
+	#banner .content header h2 { font-size: 1.9em; }
+	#about-me header.major h2 { font-size: 1.6em; }
+	#five h2 { font-size: 1.6em; }
+}
+
+/* The theme removes all side padding from buttons at <=480px, so labels touched the edges */
+@media screen and (max-width: 480px) {
+	.button {
+		padding: 0 1.6em;
+		max-width: 100%;
+	}
+}
+
+/* Touch devices: make the EN | ES switch a comfortable tap target (>= 32px tall) */
+body.is-touch #header nav ul li.lang-switch { height: auto; }
+
+	body.is-touch #header nav ul li.lang-switch a {
+		display: inline-flex;
+		align-items: center;
+		min-height: 32px;
+		min-width: 40px;
+		justify-content: center;
+	}
+
+/* Keep the small print in the research section readable on every screen */
+#research .tag,
+#research .stats span,
+#research .themes span:not(.theme-icon),
+#research .pub-authors,
+#research .pub-year,
+#research .authors,
+#research .orig-title {
+	font-size: max(0.85em, 12px);
+}
+
+	#research .tag { font-size: max(0.72em, 11.5px); }
+
+@media (prefers-reduced-motion: reduce) {
+	html { scroll-behavior: auto; }
+	*, *::before, *::after { animation: none !important; transition: none !important; }
+}
